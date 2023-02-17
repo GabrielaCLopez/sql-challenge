@@ -26,7 +26,10 @@ JOIN departments as dp
 ON de.dept_no=dp.dept_no
 
 --List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
-
+SELECT emp.first_name, emp.last_name, emp.sex
+FROM employees as emp
+WHERE emp.first_name='Hercules'
+AND emp.last_name like 'B%'
 
 --List each employee in the Sales department, including their employee number, last name, and first name.
 
